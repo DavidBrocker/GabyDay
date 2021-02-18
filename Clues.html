@@ -315,14 +315,14 @@ $(document).ready(function () {
 <strong>Name:</strong> <input type="text" name="text2">
 </p>
 <p>
-<strong>Password:</strong> <input type="password" name="text1"> <input type="button" value="Submit" name="Submit" onclick=javascript:validate(text2.value,"Gaby",text1.value,"Eyes") >
+<strong>Password:</strong> <input type="password" name="text1"> <input type="button" value="Submit" name="Submit" onclick=javascript:validate(text2.value,"gaby",text1.value,"split") >
 </p>
 </form>
 <script language = "javascript">
 function validate(text1,text2,text3,text4)
 {
  if (text1==text2 && text3==text4)
- load('https://imgprd19.hobbylobby.com/d/8f/a5/d8fa5361b4ef7f2ec8b285563839368edb6650b6/350Wx350H-191296-0320-px.jpg');
+ load('https://i.ytimg.com/vi/QBEtDVvw1A4/maxresdefault.jpg');
  else
  {
   load('https://previews.123rf.com/images/ekaterinachvileva/ekaterinachvileva1902/ekaterinachvileva190200316/124843534-try-again-hand-drawn-illustration-with-cute-marshmallow-cartoon-minimalism.jpg');
@@ -338,13 +338,30 @@ function load(url)
 <div id="first-clue-ticket" class="section level5">
 <h5>First Clue: <em>Ticket</em></h5>
 </div>
-<div id="second-clue-what-do-all-the-words-have-in-common" class="section level5">
-<h5>Second Clue: What do all the words have in common?</h5>
-<pre><code>               
-  G L A S S E S
-  Y E E E G Y Y
-  G N Y E Y E Y
-  A S G N A S Y</code></pre>
+<div id="second-cluei" class="section level5">
+<h5>Second Clue:*I"</h5>
+</div>
+<div id="third-clue" class="section level5">
+<h5>Third Clue:</h5>
+<blockquote>
+<p>Hint 1: I will give you two but you can only take one</p>
+</blockquote>
+<blockquote>
+<p>Hint 2: Banana, Ice Cream, Hot Fudge, Whipped Cream</p>
+</blockquote>
+<blockquote>
+<p>Hint: 3 Nuclear Bomb</p>
+</blockquote>
+<p>What do these have in common?</p>
+<p><br></p>
+<p id="demo" onclick="myFunction()">
+<span style="color:red">Click me for another hint!</span>
+</p>
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Cut in half, Banana _ _ _ _ _, Blank the atom!";
+}
+</script>
 <p><br></p>
 <p><span style="color:white">Eyes | Glasses | See </span></p>
 </div>
